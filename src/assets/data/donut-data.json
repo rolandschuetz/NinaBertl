@@ -1,0 +1,6 @@
+[
+  {"name": "Week", "value": 9, "color": "#ef4b00"},
+  {"name": "Average", "value": 16, "color": "#efcc00"},
+  {"name": "Good", "value": 49, "color": "#063dc7"},
+  {"name": "Great", "value": 26, "color": "#90c706"}
+]

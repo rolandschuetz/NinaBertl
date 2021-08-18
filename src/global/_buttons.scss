@@ -1,0 +1,105 @@
+$btn-state-all: "&,&:hover, &:focus, &.focus, &:active, &.active, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active";
+
+a.btn {
+  &-circle {
+    border-radius: 100%;
+    border: none;
+    background-color: #f2ebe1;
+    color: $black;
+    width: 260px;
+    height: 260px;
+    padding: 78px 15px 0 35px;
+    font-style: italic;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: rem(23);
+    letter-spacing: .02em;
+    font-family: "Times New Roman", serif;
+    transition: .3s background-color ease-in-out;
+
+    &:before {
+      position: absolute;
+      left: 40px;
+      bottom: 69px;
+      width: 45px;
+      border-bottom: 2px solid;
+      opacity: 1;
+      transition: .3s width ease-in-out;
+    }
+
+    &:after {
+      position: absolute;
+      left: 61px;
+      bottom: 59px;
+      width: 22px;
+      height: 22px;
+      transform: rotate(-45deg);
+      border-bottom: 2px solid $black;
+      border-right: 2px solid $black;
+      transition: .3s transform ease-in-out;
+      opacity: 1 !important;
+    }
+
+    &:hover {
+      color: $black;
+      background-color: $heavy;
+
+      &:before {
+        width: 65px;
+      }
+
+      &:after {
+        transform: translate(20px, 0) rotate(-45deg);
+      }
+    }
+
+    @include media-max(lg) {
+      width: 200px;
+      height: 200px;
+      padding: 60px 15px 0 30px;
+      font-size: 1.2rem;
+
+      &:before {
+        left: 30px;
+        bottom: 50px;
+      }
+
+      &:after {
+        left: 50px;
+        bottom: 40px;
+      }
+    }
+
+    @include media-max(md) {
+      width: 160px;
+      height: 160px;
+      padding: 40px 15px 0 25px;
+      font-size: 1rem;
+
+      &:before {
+        left: 25px;
+        bottom: 45px;
+      }
+
+      &:after {
+        left: 45px;
+        bottom: 35px;
+      }
+    }
+  }
+}
+
+.btn-none {
+  background: $white;
+  color: $black;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none !important;
+  border: none !important;
+}

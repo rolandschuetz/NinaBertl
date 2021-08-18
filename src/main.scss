@@ -1,0 +1,18 @@
+//globals
+@import "global/variables";
+@import "global/helpers";
+@import "global/layuot";
+@import "global/fonts";
+@import "global/buttons";
+
+//components
+
+//views
+@import "views/hero-section/hero-section";
+@import "views/header/header";
+@import "views/content-section/content-section";
+@import "views/teaser-section/teaser-section";
+@import "views/footer/footer";
+
+//pages
+@import "pages/home/home";

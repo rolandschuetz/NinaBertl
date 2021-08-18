@@ -1,0 +1,64 @@
+{
+  "name": "ninabertl",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "homepage": "http://ykosinets.xyz/ninabertl/public/index.html",
+  "bugs": {
+    "url": "git@github.com:ykosinets/ninabertl.git/issues",
+    "email": "ykosinets@gmail.com"
+  },
+  "scripts": {
+    "start": "npm i && export NODE_ENV=development && gulp",
+    "dev": "export NODE_ENV=development && gulp",
+    "prod": "export NODE_ENV=production && gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "author": {
+    "name": "Kosynets Yurii",
+    "email": "ykosinets@gmail.com",
+    "url": "http://ykosinets.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ykosinets/ninabertl.git"
+  },
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.13.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/register": "^7.15.3",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.27.5",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-image": "^6.2.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "webpack": "^5.50.0",
+    "webpack-stream": "^5.2.1",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {}
+}

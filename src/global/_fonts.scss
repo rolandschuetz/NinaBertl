@@ -1,1 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+@font-face {
+  font-family: 'Lora';
+  src: url(#{$path-font + 'lora-variablefont_wght.eot' });
+  src: url(#{$path-font + 'lora-variablefont_wght.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'lora-variablefont_wght.woff2'}) format('woff2'),
+url(#{$path-font + 'lora-variablefont_wght.woff'}) format('woff'),
+url(#{$path-font + 'lora-variablefont_wght.ttf'}) format('truetype'),
+url(#{$path-font + 'lora-variablefont_wght.svg#loraregular'}) format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url(#{$path-font + 'lora-italic-variablefont_wght.eot' });
+  src: url(#{$path-font + 'lora-italic-variablefont_wght.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'lora-italic-variablefont_wght.woff2'}) format('woff2'),
+url(#{$path-font + 'lora-italic-variablefont_wght.woff'}) format('woff'),
+url(#{$path-font + 'lora-italic-variablefont_wght.ttf'}) format('truetype'),
+url(#{$path-font + 'lora-italic-variablefont_wght.svg#loraitalic'}) format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-extralight.eot' });
+  src: url(#{$path-font + 'nunitosans-extralight.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-extralight.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-extralight.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-extralight.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-extralight.svg#nunito_sansextralight'}) format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-light.eot' });
+  src: url(#{$path-font + 'nunitosans-light.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-light.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-light.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-light.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-light.svg#nunito_sanslight'}) format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-bold.eot' });
+  src: url(#{$path-font + 'nunitosans-bold.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-bold.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-bold.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-bold.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-bold.svg#nunito_sansbold'}) format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-extrabold.eot' });
+  src: url(#{$path-font + 'nunitosans-extrabold.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-extrabold.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-extrabold.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-extrabold.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-extrabold.svg#nunito_sansextrabold'}) format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-black.eot' });
+  src: url(#{$path-font + 'nunitosans-black.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-black.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-black.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-black.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-black.svg#nunito_sansblack'}) format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+//----------------------------
+//italic
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-extralightitalic.eot' });
+  src: url(#{$path-font + 'nunitosans-extralightitalic.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-extralightitalic.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-extralightitalic.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-extralightitalic.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-extralightitalic.svg#nunito_sansextralight_italic'}) format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-italic.eot' });
+  src: url(#{$path-font + 'nunitosans-italic.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-italic.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-italic.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-italic.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-italic.svg#nunito_sansitalic'}) format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-bolditalic.eot' });
+  src: url(#{$path-font + 'nunitosans-bolditalic.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-bolditalic.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-bolditalic.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-bolditalic.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-bolditalic.svg#nunito_sansbold_italic'}) format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-extrabolditalic.eot' });
+  src: url(#{$path-font + 'nunitosans-extrabolditalic.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-extrabolditalic.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-extrabolditalic.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-extrabolditalic.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-extrabolditalic.svg#nunito_sansextrabold_italic'}) format('svg');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url(#{$path-font + 'nunitosans-blackitalic.eot' });
+  src: url(#{$path-font + 'nunitosans-blackitalic.eot?#iefix' }) format('embedded-opentype'),
+url(#{$path-font + 'nunitosans-blackitalic.woff2'}) format('woff2'),
+url(#{$path-font + 'nunitosans-blackitalic.woff'}) format('woff'),
+url(#{$path-font + 'nunitosans-blackitalic.ttf'}) format('truetype'),
+url(#{$path-font + 'nunitosans-blackitalic.svg#nunito_sansblack_italic'}) format('svg');
+  font-weight: 900;
+  font-style: italic;
+}

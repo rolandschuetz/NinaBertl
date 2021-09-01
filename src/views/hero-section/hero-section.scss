@@ -1,12 +1,14 @@
 .hero-section {
   width: 100%;
-  height: calc(100vh - 30px);
-  background: #f2eeeb;
-  padding: 68px 104px 83px 141px;
+  height: calc(100vh + -32px);
+  background: #f1eeec;
+  padding: 68px 104px 75px 141px;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
   align-items: stretch;
+  position: relative;
+  overflow: hidden;
 
   @include media-max(1480px) {
     padding-left: 81px;
@@ -14,8 +16,8 @@
   }
 
   @include media-max(1366px) {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 20px;
+    padding-right: 20px;
     min-height: calc(70vh - 30px);
     height: auto;
   }
@@ -23,6 +25,10 @@
   @include media-max(md) {
     min-height: 0;
     flex-direction: column;
+  }
+
+  @include media-max(580px) {
+    padding-bottom: 120px;
   }
 
   &__content {
@@ -41,16 +47,17 @@
   &__title {
     font-weight: 200;
     margin-bottom: 0;
-    letter-spacing: -.0625em;
-    line-height: 1.03;
-    font-size: rem(104);
-    @include interpolate(font-size, sm, 1600px, 40px, 104px);
+    letter-spacing: -.0083em;
+    line-height: 1.02;
+    font-size: rem(105);
+    color: #4a4a4a;
+    @include interpolate(font-size, sm, 1600px, 40px, 105px);
   }
 
   &__text {
     font-weight: 200;
     margin-top: 0;
-    letter-spacing: .075em;
+    letter-spacing: .1444em;
     line-height: 1.3333;
     font-size: rem(32);
     @include interpolate(font-size, sm, 1600px, 20px, 32px);
@@ -61,22 +68,32 @@
   }
 
   &__image {
-    max-width: 40vw;
-    width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 0;
-    margin-top: auto;
-    @include interpolate(margin-left, lg, 1600px, 0, -62px);
+    position: absolute;
+    right: 10.9vw;
+    bottom: 3.2vw;
+    max-width: 45vw;
 
-    @include media-max(md){
-      margin-right: 0;
-      margin-top: -70px;
-      margin-left: auto;
+    @include media-max(1800px) {
+      max-width: 43vw;
+      right: 8vw;
     }
-    @include media-max(480px){
-      margin-top: -30px;
-      margin-bottom: -30px;
+
+    @include media-max(1366px) {
+      max-width: 33vw;
+      right: 6vw;
+    }
+
+    @include media-max(md) {
+      max-width: 30vw;
+      right: 3vw;
+      min-width: 200px;
+    }
+
+    @include media-max(580px) {
+      right: 4vw;
+      bottom: -24px;
     }
   }
 }

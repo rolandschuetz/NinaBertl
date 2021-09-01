@@ -31,6 +31,7 @@ body {
 main {
   width: 100%;
   padding-top: 199px;
+  background-color: #f2eeeb;
 
   @include media-max(1280px) {
     padding-top: 85px;

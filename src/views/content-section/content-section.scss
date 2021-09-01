@@ -1,21 +1,24 @@
 .content-section {
-  padding: 122px 10vw 253px 21.84vw;
+  padding: 121px 30vw 253px 21.64vw;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
+  background-color: $white;
+  position: relative;
+  overflow: hidden;
 
   @include media-max(1366px) {
-    padding: 100px 81px 160px;
+    padding: 100px 251px 160px 81px;
   }
 
   @include media-max(lg) {
-    padding: 70px 41px 90px;
+    padding: 70px 20px 90px;
     flex-direction: column;
   }
 
   p {
-    margin-bottom: 1.8em;
+    margin-bottom: 1.45em;
   }
 
   .btn-circle {
@@ -31,42 +34,38 @@
   }
 
   &__content {
-    font-size: 20px;
-    line-height: 1.9em;
-    @include interpolate(font-size, sm, 1600px, 14px, 20px);
+    font-size: rem(22);
+    line-height: 1.8em;
+    @include interpolate(font-size, sm, 1600px, 14px, 22px);
     padding-right: 5vw;
     position: relative;
     z-index: 10;
+
+    @include media-max(md) {
+      padding-right: 0;
+    }
   }
 
   &__image {
-    margin-bottom: -253px;
-    max-width: 20vw;
-    min-width: 400px;
+    max-width: 49.6vw;
     width: 100%;
     height: auto;
     display: block;
+    position: absolute;
+    bottom: -2.4vw;
+    right: -5.8vw;
 
     @include media-max(1366px) {
-      margin-bottom: -160px;
     }
 
     @include media-max(lg) {
-      margin-bottom: -90px;
-      margin-top: -300px;
-      margin-right: 70px;
-      min-width: 200px;
-    }
-
-    @include media-max(md) {
-      margin-top: -100px;
+      min-width: 300px;
+      max-width: 39.6vw;
     }
 
     @include media-max(sm) {
-      margin-right: -30px;
-      margin-left: auto;
-      width: 100px;
-      margin-top: -220px;
+      min-width: 200px;
+      bottom: -10px;
     }
   }
 }

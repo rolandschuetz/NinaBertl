@@ -33,3 +33,8 @@ let headerMenuToggle = document.querySelector(options.selector.headerMenuToggle)
 headerMenuToggle.addEventListener('click', () => {
     headerMenuToggle.classList.toggle(options.className.headerMenuToggleActive);
 });
+
+let paths = document.querySelectorAll('.path');
+Array.prototype.forEach.call(paths, path => {
+    let length = path.getTotalLength();
+})

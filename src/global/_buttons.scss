@@ -15,11 +15,11 @@ a.btn {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    line-height: 1.6;
+    line-height: 1.4;
     font-weight: 300;
-    font-size: rem(23);
-    letter-spacing: .02em;
-    font-family: "Times New Roman", serif;
+    font-size: rem(26);
+    letter-spacing: -.003em;
+    font-family: Lora, serif;
     transition: .3s background-color ease-in-out;
 
     &:before {
@@ -79,7 +79,7 @@ a.btn {
       width: 160px;
       height: 160px;
       padding: 40px 15px 0 25px;
-      font-size: 1rem;
+      font-size: .95rem;
 
       &:before {
         left: 25px;

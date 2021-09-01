@@ -1,7 +1,7 @@
 .footer {
-  background-color: $grey-light;
   padding: 121px 120px 160px 21.84vw;
   position: relative;
+  background: #faf8f2;
 
   @include media-max(1480px) {
     padding-left: 81px;
@@ -11,6 +11,11 @@
   @include media-max(1366px) {
     padding-left: 41px;
     padding-right: 41px;
+  }
+
+  @include media-max(lg) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @include media-max(md) {
@@ -26,6 +31,7 @@
     font-size: rem(18);
     margin-top: 0;
     margin-bottom: 1.2em;
+    color: #4a4a4a;
   }
 
   &__image {
@@ -67,8 +73,12 @@
       font-size: rem(18);
       display: inline-block;
       margin-bottom: 1.2em;
-      color: inherit;
+      color: #4a4a4a;
       letter-spacing: .01em;
+
+      &:hover{
+        color: #d5a055;
+      }
 
       &[href*="tel:"] {
         letter-spacing: 0.05em;

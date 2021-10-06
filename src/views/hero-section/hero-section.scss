@@ -1,6 +1,6 @@
 .hero-section {
   width: 100%;
-  height: calc(100vh + -32px);
+  height: calc(56vw + -32px);
   background: #f1eeec;
   padding: 68px 104px 75px 141px;
   display: flex;
@@ -18,7 +18,7 @@
   @include media-max(1366px) {
     padding-left: 20px;
     padding-right: 20px;
-    min-height: calc(70vh - 30px);
+    //min-height: calc(70vh - 30px);
     height: auto;
   }
 

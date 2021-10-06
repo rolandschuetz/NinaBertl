@@ -45,7 +45,7 @@
     font-size: rem(28);
     font-weight: 100;
     letter-spacing: .575em;
-    padding: 10px 0;
+    padding: 10px 0 0;
     opacity: 0;
     z-index: 30;
     position: relative;
@@ -261,6 +261,8 @@
 }
 
 .header__logo-animation {
+  display: block;
+  padding: 0 10px 12px;
   letter-spacing: 1em;
 
   @include media-max(374px) {

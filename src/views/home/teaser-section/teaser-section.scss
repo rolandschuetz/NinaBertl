@@ -2,7 +2,6 @@
   background-color: #d5a055;
   padding: 147px 90px 145px 14.91vw;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 
@@ -54,10 +53,15 @@
     line-height: 1.1;
     font-weight: 200;
     color: $grey-light;
-    font-size: rem(96);
-    @include interpolate(font-size, 1366px, 1800px, 48px, 96px);
+    font-size: rem(48);
+    @include interpolate(font-size, 1366px, 1800px, 32px, 48px);
     position: relative;
     z-index: 10;
+
+    span {
+      font-size: rem(32);
+      @include interpolate(font-size, 1366px, 1800px, 32px, 16px);
+    }
 
     @include media-max(1900px) {
       min-width: 55vw;

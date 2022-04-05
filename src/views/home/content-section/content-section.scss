@@ -34,6 +34,13 @@
   }
 
   &__content {
+
+    p{margin-top:0 }
+
+    h4{
+      margin-bottom: 5px;
+    }
+
     font-size: rem(22);
     line-height: 1.8em;
     @include interpolate(font-size, sm, 1600px, 14px, 22px);

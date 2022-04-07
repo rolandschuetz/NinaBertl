@@ -1,9 +1,10 @@
-@@include('views/head.html', {"title" : "Hara Shiatsu"})
+@@include('views/head.html', {"title" : "Wirkung"})
 <body>
 <main class="page">
 
-    @@include('views/header/header.html')
-    @@include('views/wirkung/wirkung-content/wirkung-content.html')
+    @@include('views/header/header.html', {active: 'wirkung'})
+    @@include('views/content-section/wirkung.html')
+
     @@include('views/footer/footer.html')
 </main>
 

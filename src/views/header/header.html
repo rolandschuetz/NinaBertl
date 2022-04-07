@@ -30,17 +30,17 @@
         </button>
 
         <ul class="header__menu">
-            <li class="header__menu-item header__menu-item--active">
+            <li class="header__menu-item@@if(active=='shiatsu') { header__menu-item--active}">
                 <a href="./shiatsu.html" class="header__menu-link">HARA SHIATSU</a>
             </li>
-            <li class="header__menu-item">
+            <li class="header__menu-item@@if(active=='wirkung') { header__menu-item--active}">
                 <a href="./wirkung.html" class="header__menu-link">WIRKUNG</a>
             </li>
-            <li class="header__menu-item">
-                <a href="#" class="header__menu-link">ÜBER MICH</a>
+            <li class="header__menu-item@@if(active=='ueber-mich') { header__menu-item--active}">
+                <a href="./ueber-mich.html" class="header__menu-link">ÜBER MICH</a>
             </li>
-            <li class="header__menu-item">
-                <a href="#" class="header__menu-link">KONTAKT</a>
+            <li class="header__menu-item@@if(active=='contact') { header__menu-item--active}">
+                <a href="./contact.html" class="header__menu-link">KONTAKT</a>
             </li>
         </ul>
     </nav>

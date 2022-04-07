@@ -1,7 +1,6 @@
 .content-section {
   padding: 121px 30vw 253px 21.64vw;
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
   background-color: $white;
@@ -59,10 +58,14 @@
     height: auto;
     display: block;
     position: absolute;
-    bottom: -2.4vw;
-    right: -5.8vw;
+    bottom: -5.4vw;
+    right: 1vw;
+
+
 
     @include media-max(1366px) {
+      bottom: -9vw;
+      max-width: 39vw;
     }
 
     @include media-max(lg) {
@@ -75,4 +78,13 @@
       bottom: -10px;
     }
   }
+}
+
+.content-section__image--wirkung{
+  bottom: -10vw;
+}
+
+.content-section__image--contact{
+  max-width: 35.6vw;
+  bottom: -5vw;
 }

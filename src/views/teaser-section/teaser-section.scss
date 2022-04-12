@@ -56,7 +56,7 @@
     font-weight: 200;
     color: $grey-light;
     font-size: rem(48);
-    @include interpolate(font-size, 1366px, 1800px, 32px, 48px);
+    @include interpolate(font-size, 1366px, 1800px, 28px, 48px);
     position: relative;
     z-index: 10;
 
@@ -75,7 +75,7 @@
     @include media-max(lg) {
       margin-bottom: 0;
       text-align: center;
-      font-size: rem(32);
+      font-size: rem(24);
     }
   }
 }

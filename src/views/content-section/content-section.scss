@@ -81,10 +81,7 @@
 }
 
 
-.content-section__image--contact {
-  max-width: 35.6vw;
-  bottom: -5vw;
-}
+
 
 .content-section__image--shiatsu {
 
@@ -116,6 +113,20 @@
 
 .content-section__image--ueber-mich {
   bottom: -8vw;
+
+  @include media-max(lg) {
+    position: unset;
+    right: unset;
+    bottom: unset;
+    margin: 0 auto;
+    min-width: 250px;
+    max-width: 57.6vw;
+  }
+}
+
+.content-section__image--contact {
+  max-width: 35.6vw;
+  bottom: -5vw;
 
   @include media-max(lg) {
     position: unset;

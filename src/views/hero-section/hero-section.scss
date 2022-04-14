@@ -1,6 +1,7 @@
 .hero-section {
   width: 100%;
   height: calc(56vw + -32px);
+  max-height: calc(100vh - 65px - 78px - 57px);
   background: #f1eeec;
   padding: 68px 104px 75px 141px;
   display: flex;
@@ -18,12 +19,13 @@
   @include media-max(1366px) {
     padding-left: 20px;
     padding-right: 20px;
+    min-height: calc(100vh - 65px - 78px - 57px);
     //min-height: calc(70vh - 30px);
     height: auto;
   }
 
   @include media-max(md) {
-    min-height: 0;
+    min-height: calc(100vh - 20px - 50px - 62px);
     flex-direction: column;
   }
 
@@ -72,8 +74,8 @@
     display: block;
     position: absolute;
     right: 10.9vw;
-    bottom: 3.2vw;
-    max-width: 45vw;
+    bottom: 1vw;
+    max-width: 41vw;
 
     @include media-max(1800px) {
       max-width: 43vw;
@@ -81,19 +83,24 @@
     }
 
     @include media-max(1366px) {
-      max-width: 33vw;
-      right: 6vw;
+      max-width: 550px;
+      left: 50%;
+      top: 50%;;
+      transform: translate(-50%, -50%);
     }
 
     @include media-max(md) {
-      max-width: 30vw;
-      right: 3vw;
-      min-width: 200px;
+      transform: unset;
+      top: unset;
+      left: unset;
+      bottom: 50px;
+
     }
 
     @include media-max(580px) {
-      right: 4vw;
-      bottom: -24px;
+      max-width: 250px;
+      right: 15vw;
+      bottom: 50px;
     }
   }
 }

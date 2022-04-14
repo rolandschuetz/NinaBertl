@@ -1,5 +1,5 @@
 .content-section {
-  padding: 121px 30vw 253px 21.64vw;
+  padding: 121px 30vw 350px 21.64vw;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -81,10 +81,8 @@
 }
 
 
-
-
 .content-section__image--shiatsu {
-
+  max-width: 43vw;
   bottom: -5vw;
   right: 0;
 
@@ -93,26 +91,44 @@
     right: unset;
     bottom: unset;
     margin: 0 auto;
-    min-width: 250px;
+    min-width: 350px;
     max-width: 57.6vw;
   }
 }
 
 .content-section__image--wirkung {
-  bottom: -8vw;
+  max-width: 40vw;
+  bottom: -7vw;
 
   @include media-max(lg) {
     position: unset;
     right: unset;
     bottom: unset;
     margin: 0 auto;
-    min-width: 250px;
+    min-width: 350px;
     max-width: 57.6vw;
   }
 }
 
 .content-section__image--ueber-mich {
-  bottom: -8vw;
+  max-width: 42vw;
+  bottom: -9vw;
+  right: 2vw;
+
+  @include media-max(lg) {
+    position: unset;
+    right: unset;
+    bottom: unset;
+    margin: 0 auto;
+    min-width: 350px;
+    max-width: 57.6vw;
+  }
+}
+
+.content-section__image--contact {
+  max-width: 30vw;
+  right: 2vw;
+  bottom: -2vw;
 
   @include media-max(lg) {
     position: unset;
@@ -124,16 +140,6 @@
   }
 }
 
-.content-section__image--contact {
-  max-width: 35.6vw;
-  bottom: -5vw;
-
-  @include media-max(lg) {
-    position: unset;
-    right: unset;
-    bottom: unset;
-    margin: 0 auto;
-    min-width: 250px;
-    max-width: 57.6vw;
-  }
+.content-section--is-grey {
+  background: #f1eeec;
 }

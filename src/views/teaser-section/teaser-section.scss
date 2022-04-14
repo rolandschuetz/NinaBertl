@@ -62,7 +62,7 @@
 
     span {
       font-size: rem(24);
-      @include interpolate(font-size, 1366px, 1800px, 24px, 16px);
+      @include interpolate(font-size, 1366px, 1800px, 16px, 24px);
     }
 
     @include media-max(1900px) {
